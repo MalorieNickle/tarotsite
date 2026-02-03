@@ -295,7 +295,7 @@ const CARDS = [
   img: "images/cards/king_cups.png",
   meaning: "Emotional balance, wisdom, calm leadership, and steady compassion."
 },
-{/* Pick up here*/
+{
   id: "ace_of_swords",
   name: "Ace of Swords",
   img: "images/cards/ace_swords.png",
@@ -439,7 +439,7 @@ const CARDS = [
   img: "images/cards/ten_pentacles.png",
   meaning: "Wealth, legacy, long-term stability, and family security."
 },
-{
+{/* Pick up here*/
   id: "page_of_pentacles",
   name: "Page of Pentacles",
   img: "images/cards/page_pentacles.png",
