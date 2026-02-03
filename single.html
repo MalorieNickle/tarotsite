@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tarot Meanings</title>
+        <title>Single Card</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -20,18 +20,56 @@
 
 
 <!--  Main content  -->
-  <main>
+ 
 
-
+<!--Navigation buttons-->
 <nav class="nav">
-
     <a href="index.html">Home</a>
     <a href="single.html">Single Card</a>
     <a href="three.html">Three Card Spread</a>
     <a href="celtic.html">Celtic Cross</a>
+    <a href="explore.html">Explore Cards</a>
 </nav>
 
-  </main>
+
+
+<!--Instructions for user and pull button-->
+<main class="center-wrapper">
+<h1 class="pagetitle">Single Card Pull</h1>
+<p class="card-instruction">Click the button below to draw a single card.</p>
+<button id="drawBtn" class="draw-btn">Draw Card</button>
+
+
+<section class="card-area">
+  <div class="card-frame">
+    <div class="card-flip" id="cardFlip">
+      
+      <!-- BACK of the card -->
+<div class="card-face card-back">
+  <img
+    src="images/cardback.png"
+    alt="Tarot card back"
+    class="card-back-image"
+  >
+</div>
+
+      <!-- FRONT of the card -->
+      <div class="card-face card-front">
+        <img id="cardImage" src="" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <h2 id="cardName" class="card-name"></h2>
+  <p id="cardMeaning" class="card-meaning"></p>
+</section>
+
+
+</main>
+
+<script src="jscards.js"></script>
+<script src="jsapp.js"></script>
 
 <!--  Footer  -->
   <footer>
