@@ -90,8 +90,6 @@ const CARDS = [
   img: "images/cards/devil.png",
   meaning: "Attachment, temptation, unhealthy patterns, and confronting shadow aspects."
 },
-
-/* Pick up here*/
 {
   id: "the_tower",
   name: "The Tower",
@@ -128,6 +126,7 @@ const CARDS = [
   img: "images/cards/world.png",
   meaning: "Completion, fulfillment, wholeness, and successfully closing a major cycle."
 },
+/* Pick up here*/
 {
   id: "ace_of_wands",
   name: "Ace of Wands",
