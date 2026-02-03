@@ -211,7 +211,7 @@ const CARDS = [
   img: "images/cards/king_wands.png",
   meaning: "Vision, leadership, ambition, and inspiring others through action."
 },
-{/* Pick up here*/
+{
   id: "ace_of_cups",
   name: "Ace of Cups",
   img: "images/cards/ace_cups.png",
@@ -295,7 +295,7 @@ const CARDS = [
   img: "images/cards/king_cups.png",
   meaning: "Emotional balance, wisdom, calm leadership, and steady compassion."
 },
-{
+{/* Pick up here*/
   id: "ace_of_swords",
   name: "Ace of Swords",
   img: "images/cards/ace_swords.png",
