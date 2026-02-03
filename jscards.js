@@ -465,3 +465,7 @@ const CARDS = [
 },
 
 ];
+
+window.CARDS = [
+  // cards...
+];

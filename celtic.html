@@ -1,45 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Celtic Cross</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Celtic Cross Spread</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
 <body>
 
-<!--  Top banner  -->
-  <header>
-
-
-<!--Navigation-->
-
-  </header>
-
-
-<!--  Main content  -->
-  <main>
-
-
-<nav class="nav">
-
+  <nav class="nav">
     <a href="index.html">Home</a>
     <a href="single.html">Single Card</a>
     <a href="three.html">Three Card Spread</a>
     <a href="celtic.html">Celtic Cross</a>
     <a href="explore.html">Explore Cards</a>
-
 </nav>
 
+
+  <main class="center-wrapper">
+    <h1 class="pagetitle">Celtic Cross Spread</h1>
+    <p class="home-instruction">A full 10-card reading.</p>
+
+    <button class="draw-btn" id="drawCelticBtn">Draw 10 Cards</button>
+
+    <section class="celtic" aria-label="Celtic Cross Spread">
+      <!-- LEFT: The Cross (6 cards) -->
+      <div class="celtic__cross">
+        <!-- 1: Present -->
+        <article class="spread-slot">
+          <h2 class="spread-slot__label">Present</h2>
+          <div class="card-frame">
+            <div class="card-flip" id="flip0">
+              <div class="card-face card-back">
+                <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+              </div>
+              <div class="card-face card-front">
+                <img id="img0" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <h3 class="card-name" id="name0"></h3>
+          <p class="card-meaning" id="meaning0"></p>
+        </article>
+
+        <!-- 2: Challenge (crossing) -->
+        <article class="spread-slot spread-slot--crossing">
+          <h2 class="spread-slot__label">Challenge</h2>
+          <div class="card-frame">
+            <div class="card-flip card-flip--cross" id="flip1">
+              <div class="card-face card-back">
+                <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+              </div>
+              <div class="card-face card-front">
+                <img id="img1" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <h3 class="card-name" id="name1"></h3>
+          <p class="card-meaning" id="meaning1"></p>
+        </article>
+
+        <!-- 3: Foundation (below) -->
+        <article class="spread-slot">
+          <h2 class="spread-slot__label">Foundation</h2>
+          <div class="card-frame">
+            <div class="card-flip" id="flip2">
+              <div class="card-face card-back">
+                <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+              </div>
+              <div class="card-face card-front">
+                <img id="img2" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <h3 class="card-name" id="name2"></h3>
+          <p class="card-meaning" id="meaning2"></p>
+        </article>
+
+        <!-- 4: Recent Past (left) -->
+        <article class="spread-slot">
+          <h2 class="spread-slot__label">Recent Past</h2>
+          <div class="card-frame">
+            <div class="card-flip" id="flip3">
+              <div class="card-face card-back">
+                <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+              </div>
+              <div class="card-face card-front">
+                <img id="img3" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <h3 class="card-name" id="name3"></h3>
+          <p class="card-meaning" id="meaning3"></p>
+        </article>
+
+        <!-- 5: Goal (above) -->
+        <article class="spread-slot">
+          <h2 class="spread-slot__label">Goal</h2>
+          <div class="card-frame">
+            <div class="card-flip" id="flip4">
+              <div class="card-face card-back">
+                <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+              </div>
+              <div class="card-face card-front">
+                <img id="img4" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <h3 class="card-name" id="name4"></h3>
+          <p class="card-meaning" id="meaning4"></p>
+        </article>
+
+        <!-- 6: Near Future (right) -->
+        <article class="spread-slot">
+          <h2 class="spread-slot__label">Near Future</h2>
+          <div class="card-frame">
+            <div class="card-flip" id="flip5">
+              <div class="card-face card-back">
+                <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+              </div>
+              <div class="card-face card-front">
+                <img id="img5" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <h3 class="card-name" id="name5"></h3>
+          <p class="card-meaning" id="meaning5"></p>
+        </article>
+      </div>
+
+      <!-- RIGHT: The Staff (4 cards) -->
+      <div class="celtic__staff">
+        <article class="spread-slot">
+          <h2 class="spread-slot__label">Self</h2>
+          <div class="card-frame">
+            <div class="card-flip" id="flip6">
+              <div class="card-face card-back">
+                <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+              </div>
+              <div class="card-face card-front">
+                <img id="img6" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <h3 class="card-name" id="name6"></h3>
+          <p class="card-meaning" id="meaning6"></p>
+        </article>
+
+        <article class="spread-slot">
+          <h2 class="spread-slot__label">Environment</h2>
+          <div class="card-frame">
+            <div class="card-flip" id="flip7">
+              <div class="card-face card-back">
+                <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+              </div>
+              <div class="card-face card-front">
+                <img id="img7" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <h3 class="card-name" id="name7"></h3>
+          <p class="card-meaning" id="meaning7"></p>
+        </article>
+
+        <article class="spread-slot">
+          <h2 class="spread-slot__label">Hopes &amp; Fears</h2>
+          <div class="card-frame">
+            <div class="card-flip" id="flip8">
+              <div class="card-face card-back">
+                <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+              </div>
+              <div class="card-face card-front">
+                <img id="img8" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <h3 class="card-name" id="name8"></h3>
+          <p class="card-meaning" id="meaning8"></p>
+        </article>
+
+        <article class="spread-slot">
+          <h2 class="spread-slot__label">Outcome</h2>
+          <div class="card-frame">
+            <div class="card-flip" id="flip9">
+              <div class="card-face card-back">
+                <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+              </div>
+              <div class="card-face card-front">
+                <img id="img9" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <h3 class="card-name" id="name9"></h3>
+          <p class="card-meaning" id="meaning9"></p>
+        </article>
+      </div>
+    </section>
   </main>
 
-<!--  Footer  -->
-  <footer>
-  </footer>
-
-
-
+  <script src="jscards.js"></script>
+  <script src="celtic.js"></script>
 </body>
 </html>
