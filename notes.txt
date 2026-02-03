@@ -1,0 +1,15 @@
+To do list:
+
+concept
+single page with all of the tarot card images and descriptions, just use placeholder images for now.
+card on the left, description on the right. title above each, centered.
+
+search bar on top, with a button.
+
+button top left "Back to portfolio"
+Button to tarot site, remove other nav buttons while there.
+back button routes to portfolio main page.
+
+
+ombre background from purple to black.
+continous scroll.

@@ -1,0 +1,139 @@
+*{
+margin:0; 
+padding:0; 
+box-sizing:border-box;}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #b25aec, #350653);
+}
+
+
+.center-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  text-align: center;
+  gap: 24px;
+}
+
+
+.welcome {
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20vh;
+}
+.main-instruction {
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2vh;
+}
+
+/*Navigation buttons with sparkl effect*/
+
+
+.nav {
+  display: flex;
+  justify-content: center; /* center across screen */
+  align-items: center;
+  gap: 16px;               /* space between buttons */
+  flex-wrap: wrap;         /* allows wrapping on small screens */
+  margin-top: 24px;
+}
+
+
+.nav a {
+  position: relative;
+  overflow: hidden; /* keeps sparkles inside */
+  display: inline-flex;  
+  gap: 16px;      
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 10px; 
+
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.50rem;       
+  background-color: #FFE5E5;
+  color: #1b032b;
+
+  border-radius: 6px;          
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+
+.nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+
+  background:
+    radial-gradient(circle, rgba(130, 24, 201, 0.95) 0 1px, transparent 2px) 12% 20% / 6px 6px no-repeat,
+    radial-gradient(circle, rgba(12, 0, 17, 0.9) 0 1px, transparent 2px) 35% 65% / 5px 5px no-repeat,
+    radial-gradient(circle, rgba(148, 51, 196, 0.85) 0 1px, transparent 2px) 58% 30% / 6px 6px no-repeat,
+    radial-gradient(circle, rgba(218, 64, 218, 0.9) 0 1px, transparent 2px) 78% 55% / 5px 5px no-repeat,
+    radial-gradient(circle, rgba(58, 7, 148, 0.85) 0 1px, transparent 2px) 25% 82% / 6px 6px no-repeat;
+
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.55));
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+
+  background:
+    radial-gradient(circle, rgba(255,255,255,0.85) 0 1px, transparent 2px) 18% 42% / 5px 5px no-repeat,
+    radial-gradient(circle, rgba(210,230,255,0.9) 0 1px, transparent 2px) 42% 18% / 6px 6px no-repeat,
+    radial-gradient(circle, rgba(240,210,255,0.85) 0 1px, transparent 2px) 65% 72% / 5px 5px no-repeat,
+    radial-gradient(circle, rgba(255,255,255,0.9) 0 1px, transparent 2px) 88% 32% / 6px 6px no-repeat,
+    radial-gradient(circle, rgba(220,200,255,0.85) 0 1px, transparent 2px) 52% 88% / 5px 5px no-repeat;
+
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.45));
+}
+
+
+.nav a:hover::before {
+  opacity: 1;
+  animation: twinkleA 1.8s ease-in-out infinite;
+}
+
+.nav a:hover::after {
+  opacity: 1;
+  animation: twinkleB 1.8s ease-in-out infinite;
+}
+
+
+.nav a:hover::after {
+  opacity: 1;
+  animation: sparkleTwinkle 1.4s ease-in-out infinite;
+}
+
+@keyframes twinkleA {
+  0%   { opacity: 0.1; }
+  30%  { opacity: 0.9; }
+  60%  { opacity: 0.2; }
+  100% { opacity: 0.1; }
+}
+
+@keyframes twinkleB {
+  0%   { opacity: 0.6; }
+  30%  { opacity: 0.15; }
+  60%  { opacity: 0.85; }
+  100% { opacity: 0.6; }
+}
