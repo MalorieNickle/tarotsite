@@ -439,7 +439,7 @@ const CARDS = [
   img: "images/cards/ten_pentacles.png",
   meaning: "Wealth, legacy, long-term stability, and family security."
 },
-{/* Pick up here*/
+{
   id: "page_of_pentacles",
   name: "Page of Pentacles",
   img: "images/cards/page_pentacles.png",
@@ -465,7 +465,7 @@ const CARDS = [
 },
 
 ];
-
+/* Pick up here*/
 window.CARDS = [
   // cards...
 ];
