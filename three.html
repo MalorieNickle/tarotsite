@@ -1,45 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Three Card Spread</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three Card Spread</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
 <body>
 
-<!--  Top banner  -->
-  <header>
-
-
-<!--Navigation-->
-
-  </header>
-
-
-<!--  Main content  -->
-  <main>
-
-
 <nav class="nav">
-
     <a href="index.html">Home</a>
     <a href="single.html">Single Card</a>
     <a href="three.html">Three Card Spread</a>
     <a href="celtic.html">Celtic Cross</a>
     <a href="explore.html">Explore Cards</a>
-
 </nav>
 
+
+
+
+  <main class="center-wrapper">
+    <h1 class="pagetitle">Three Card Spread</h1>
+    <p class="card-instruction">Click the button below to draw three cards.</p>
+  
+
+    <button class="draw-btn" id="drawThreeBtn">Draw 3 Cards</button>
+
+    <section class="spread" aria-label="Three card spread">
+      <!-- Card 1 -->
+      <article class="spread-card">
+        <h2 class="spread-card__label">One</h2>
+
+        <div class="card-frame">
+          <div class="card-flip" id="flip0">
+            <div class="card-face card-back">
+              <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+            </div>
+            <div class="card-face card-front">
+              <img id="img0" src="" alt="">
+            </div>
+          </div>
+        </div>
+
+        <h3 class="card-name" id="name0"></h3>
+        <p class="card-meaning" id="meaning0"></p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="spread-card">
+        <h2 class="spread-card__label">Two</h2>
+
+        <div class="card-frame">
+          <div class="card-flip" id="flip1">
+            <div class="card-face card-back">
+              <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+            </div>
+            <div class="card-face card-front">
+              <img id="img1" src="" alt="">
+            </div>
+          </div>
+        </div>
+
+        <h3 class="card-name" id="name1"></h3>
+        <p class="card-meaning" id="meaning1"></p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="spread-card">
+        <h2 class="spread-card__label">Three</h2>
+
+        <div class="card-frame">
+          <div class="card-flip" id="flip2">
+            <div class="card-face card-back">
+              <img class="card-back-image" src="images/cards/back.png" alt="Tarot card back">
+            </div>
+            <div class="card-face card-front">
+              <img id="img2" src="" alt="">
+            </div>
+          </div>
+        </div>
+
+        <h3 class="card-name" id="name2"></h3>
+        <p class="card-meaning" id="meaning2"></p>
+      </article>
+    </section>
   </main>
 
-<!--  Footer  -->
-  <footer>
-  </footer>
-
-
-
+  <!-- Your cards array file -->
+  <script src="jscards.js"></script>
+  <!-- New JS for this page -->
+   <script src="jsapp.js"></script>
+  <script src="three-spread.js"></script>
 </body>
 </html>
