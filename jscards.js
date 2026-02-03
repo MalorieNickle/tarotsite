@@ -465,7 +465,6 @@ const CARDS = [
 },
 
 ];
-/* Pick up here*/
 window.CARDS = [
   // cards...
 ];
